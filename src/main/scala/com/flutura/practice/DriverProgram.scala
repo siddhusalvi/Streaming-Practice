@@ -9,13 +9,15 @@ object DriverProgram {
 
       //Getting properties
       val properties = PropertyManager.getProperties()
-//
-//      //Setting up logger
-//      logger = LogManager.getLogger(properties.getProperty("logger"))
 
-      val kafkaReceiver = new KafkaReceiver()
-      kafkaReceiver.start()
+      //Setting up logger
+      logger = LogManager.getLogger(properties.getProperty("logger"))
 
+//      val kafkaReceiver = new KafkaReceiver()
+//      kafkaReceiver.startStructuredStream()
+
+      val normalStream = new NormalStream
+      normalStream.start()
 
     } catch {
       case exception: Exception => logger.debug(exception.printStackTrace())

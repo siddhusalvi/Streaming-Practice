@@ -1,0 +1,1 @@
+{ "AssetName":"W080F0054015", "timestamp":1604474005553, "values":[ {  "id":"TAG.ActCycleTime",  "v":8.35599995,  "q":true,  "t":1604473997894 }, {"id":"TAG.ActShots","v":50358,"q":true,"t":1604474000159}, {"id":"TAG.AverageCycleTime","v":8.3519001,"q":true,"t":1604474000159}, {"id":"TAG.Warning4","v":0,"q":true,"t":1604386843864} ]}

@@ -42,7 +42,7 @@ class KafkaReceiver {
   logger.info("Done setup properties for kafka consumer")
 
   //Starting consumer
-  def start(): Unit = {
+  def startStructuredStream(): Unit = {
 
     logger.info("Starting Consumer")
 
