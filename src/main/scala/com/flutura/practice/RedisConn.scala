@@ -10,10 +10,11 @@ object RedisConn extends App {
 
 
   var jedis: Jedis =getRedisDB()
+  jedis.select(11)
+  val map = jedis.hgetAll("ABB_PROD_WELL_MAP").keySet()
 
-  val lst = jedis.lrange(properties.getProperty("list-key"), 0L, -1L)
+print(map.toString)
 
-  println(lst.toString)
 
 //  var activityAttributeList: Map[String, Set[String]] = _
 //
