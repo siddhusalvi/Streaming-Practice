@@ -9,7 +9,7 @@ object GitRepoChange extends App {
   for(line <- repos){
     val first = "docker push "
     val second = line
-    val third = "registry.gitlab.com/flutura/cerebra-asset-diagnostics/kubernetes-docker-images/"
+    val third = ""
     //println(first+second+third+second.substring(43))
     println(first+third+second.substring(43))
 

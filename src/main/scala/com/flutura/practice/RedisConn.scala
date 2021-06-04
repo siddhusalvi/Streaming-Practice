@@ -16,19 +16,6 @@ object RedisConn extends App {
 print(map.toString)
 
 
-//  var activityAttributeList: Map[String, Set[String]] = _
-//
-//  val redisConn = jedis.pipelined()
-//  redisConn.select(properties.getProperty("redisDbIndex","1").toInt)
-//  // Read topic list
-//  val pipeResponse:List[String] = redisConn.lrange(properties.getProperty("list-key"), 0L, -1L)
-//  val keyResponse = redisConn.keys("ACTIVITY_*")
-//  redisConn.sync()
-//  // Fetch attribute keys
-//  activityAttributeList = keyResponse.get().asScala.map(assetKey => {
-//    (assetKey, jedis.smembers(assetKey).asScala.toSet)
-//  }).toMap
-
 
   //Function to get redis database
   def getRedisDB(): Jedis ={
